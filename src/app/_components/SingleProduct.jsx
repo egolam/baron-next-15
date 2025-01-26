@@ -1,56 +1,72 @@
 import Image from "next/image";
-import formatCurrency from "../helper/formatCurrency";
+
 import AddToCart from "./AddToCart";
 import AddtoWishlist from "./AddtoWishlist";
 import Link from "next/link";
 import Ribbon from "./Ribbon";
 
 const SingleProduct = ({
-  title,
-  img,
-  sex,
-  price,
-  gr,
-  id,
-  discount,
+  slug,
+  collectionIds,
+  media,
   ribbon,
+  discount,
+  name,
+  price,
+  productOptions,
 }) => {
+  const sex = collectionIds
+    .map((item) => {
+      if (item === process.env.MALE_COLL_ID) {
+        return "Erkek";
+      } else if (item === process.env.FEMALE_COLL_ID) {
+        return "Kadın";
+      } else if (item === process.env.UNISEX_COLL_ID) {
+        return "Unisex";
+      }
+    })
+    .filter((item) => item !== undefined);
+
+  const cat = sex[0].toLowerCase() !== "kadın" ? sex[0].toLowerCase() : "kadin";
+
   return (
     <li className="border border-black flex flex-col hover:cursor-pointer hover:scale-[1.02] transition-transform">
-      <Link href={`/products/${sex}/${id}`}>
+      <Link href={`/products/${cat}/${slug}`}>
         <div className="relative aspect-square">
           <Image
-            src={img}
+            src={media.mainMedia.image.url}
             alt="title"
             fill
             className="object-cover"
             sizes="100%"
           />
-          <Ribbon ribbon={ribbon} discount={discount} />
-          {discount > 0 && (
-            <p className="absolute text-[0.625rem] text-zinc-50 px-2 py-1< bg-green-600 bottom-0 right-0">{`%${discount} İndirim`}</p>
+          <Ribbon ribbon={ribbon} />
+          {discount.value > 0 && (
+            <p className="absolute text-xs text-zinc-50 px-2 py-1< bg-green-600 bottom-0 right-0">{`%${discount.value} İndirim`}</p>
           )}
         </div>
-        <div className="flex flex-col gap-1 p-3">
+        <div className="flex flex-col gap-2 p-3">
           <div>
-            <p className="uppercase text-[0.5rem] tracking-wider">{sex}</p>
-            <h3 className="text-sm">{title}</h3>
+            <p className="capitalize text-xs tracking-wider">{sex}</p>
+            <h3 className="text-sm uppercase">{name}</h3>
           </div>
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-1">
-              {discount > 0 && (
-                <p>{formatCurrency(price * ((discount - 100) / -100))}</p>
+            <div className="flex items-center gap-1 text-sm">
+              {discount.value > 0 && (
+                <p className="">{price.formatted.discountedPrice}</p>
               )}
               <p
                 className={`${
-                  discount > 0 ? "line-through text-black/50 text-xs pt-1" : ""
+                  discount.value > 0
+                    ? "line-through text-black/50 text-xs pt-1"
+                    : ""
                 }`}
               >
-                {formatCurrency(price)}
+                {price.formatted.price}
               </p>
             </div>
 
-            <p className="text-xs">{gr} gr</p>
+            <p className="text-sm">{productOptions[0].choices[0].value} gr</p>
           </div>
         </div>
       </Link>

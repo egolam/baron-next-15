@@ -1,29 +1,19 @@
-"use client";
-import { useEffect } from "react";
-import useWixClient from "./hooks/useWixClient";
-
+import Discounted from "./_components/Discounted";
 import Featured from "./_components/Featured";
 import Slider from "./_components/Slider";
-import Discounted from "./_components/Discounted";
+
+import { Suspense } from "react";
 
 const HomePage = () => {
-  const wixClient = useWixClient();
-
-  useEffect(() => {
-    const getProducts = async () => {
-      const res = await wixClient.products.queryProducts().find();
-
-      console.log(res);
-    };
-
-    getProducts();
-  }, [wixClient]);
-
   return (
     <>
       <Slider />
-      <Featured />
-      <Discounted />
+      <Suspense key="yarrak" fallback={<p>Loading...</p>}>
+        <Featured />
+      </Suspense>
+      <Suspense key="dassak" fallback={<p>Loading...</p>}>
+        <Discounted />
+      </Suspense>
     </>
   );
 };

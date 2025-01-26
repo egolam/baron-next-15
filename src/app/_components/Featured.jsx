@@ -1,13 +1,20 @@
 import SingleProduct from "./SingleProduct";
-import { items } from "../constants/items";
+import { wixClientServer } from "../helper/wixClientServer";
 
-const Featured = () => {
+const Featured = async () => {
+  const wixClient = await wixClientServer();
+
+  const { _items } = await wixClient.products
+    .queryProducts()
+    .eq("collectionIds", process.env.FEATURED_COLL_ID)
+    .find();
+
   return (
-    <section className="text-black px-4 flex flex-col gap-4 pb-4">
+    <section className="text-black flex flex-col gap-4 pb-4 items-center px-4">
       <h2 className="text-2xl font-semibold">Öne çıkanlar</h2>
-      <ul className="grid grid-cols-2 grid-rows-3 gap-4">
-        {items.map((item) => (
-          <SingleProduct key={item.id} {...item} />
+      <ul className="grid grid-cols-1 gap-4 w-full">
+        {_items.map((item) => (
+          <SingleProduct key={item._id} {...item} />
         ))}
       </ul>
     </section>

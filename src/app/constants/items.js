@@ -2,7 +2,7 @@ export const items = [
   {
     id: 0,
     title: "Lorem ipsum dolor.",
-    price: 500,
+    price: 430,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "kadin",
     gr: 15,
@@ -12,6 +12,9 @@ export const items = [
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gece",
+
     comments: [
       {
         userId: 0,
@@ -26,13 +29,16 @@ export const items = [
     price: 500,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "unisex",
-    gr: 15,
+    gr: 100,
     slug: "lorem-ipsum-slug",
     ribbon: ["Çok satan"],
     discount: 0,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "gotten jedie",
+    kullanimZamani: "gündüz",
+
     comments: [
       {
         userId: 0,
@@ -44,16 +50,19 @@ export const items = [
   {
     id: 2,
     title: "Lorem ipsum dolor.",
-    price: 500,
+    price: 250,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "unisex",
-    gr: 15,
+    gr: 250,
     slug: "lorem-ipsum-slug",
     ribbon: [],
     discount: 0,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gece",
+
     comments: [
       {
         userId: 0,
@@ -65,16 +74,19 @@ export const items = [
   {
     id: 3,
     title: "Lorem ipsum dolor.",
-    price: 500,
+    price: 620,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "erkek",
-    gr: 15,
+    gr: 500,
     slug: "lorem-ipsum-slug",
     ribbon: ["Yeni", "Çok satan"],
     discount: 0,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "eyfel",
+    kullanimZamani: "gece",
+
     comments: [
       {
         userId: 0,
@@ -89,13 +101,16 @@ export const items = [
     price: 500,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "kadin",
-    gr: 15,
+    gr: 50,
     slug: "lorem-ipsum-slug",
     ribbon: ["Çok satan"],
     discount: 0,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gece",
+
     comments: [
       {
         userId: 0,
@@ -110,13 +125,16 @@ export const items = [
     price: 500,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "erkek",
-    gr: 15,
+    gr: 500,
     slug: "lorem-ipsum-slug",
     ribbon: ["Çok satan"],
     discount: 20,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "thasaq",
+    kullanimZamani: "sabah",
+
     comments: [
       {
         userId: 0,
@@ -131,13 +149,16 @@ export const items = [
     price: 500,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "erkek",
-    gr: 15,
+    gr: 1000,
     slug: "lorem-ipsum-slug",
     ribbon: ["Yeni", "Çok satan"],
     discount: 50,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gece",
+
     comments: [
       {
         userId: 0,
@@ -149,16 +170,19 @@ export const items = [
   {
     id: 7,
     title: "Lorem ipsum dolor.",
-    price: 500,
+    price: 1250,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "unisex",
-    gr: 15,
+    gr: 100,
     slug: "lorem-ipsum-slug",
     ribbon: ["Yeni"],
     discount: 10,
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "eyfel",
+    kullanimZamani: "sabah",
+
     comments: [
       {
         userId: 0,
@@ -180,6 +204,9 @@ export const items = [
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gündüz",
+
     comments: [
       {
         userId: 0,
@@ -191,6 +218,54 @@ export const items = [
   {
     id: 9,
     title: "Lorem ipsum dolor.",
+    price: 5000,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "kadin",
+    gr: 50,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gece",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 10,
+    title: "Lorem ipsum dolor.",
+    price: 500,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "erkek",
+    gr: 250,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "thasaq",
+    kullanimZamani: "gece",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 11,
+    title: "Lorem ipsum dolor.",
     price: 500,
     img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     sex: "kadin",
@@ -201,6 +276,129 @@ export const items = [
     stock: true,
     desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
     tags: ["koku", "parfum", "esans"],
+    marka: "thasaq",
+    kullanimZamani: "gece",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 12,
+    title: "Lorem ipsum dolor.",
+    price: 500,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "kadin",
+    gr: 50,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "sabah",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 13,
+    title: "Lorem ipsum dolor.",
+    price: 500,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "kadin",
+    gr: 100,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "eyfel",
+    kullanimZamani: "gece",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 14,
+    title: "Lorem ipsum dolor.",
+    price: 500,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "kadin",
+    gr: 1000,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "gotten jedie",
+    kullanimZamani: "gündüz",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 15,
+    title: "Lorem ipsum dolor.",
+    price: 500,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "unisex",
+    gr: 15,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "eyfel",
+    kullanimZamani: "gece",
+
+    comments: [
+      {
+        userId: 0,
+        text: "Harika bir urun ulee",
+        star: 5,
+      },
+    ],
+  },
+  {
+    id: 16,
+    title: "Lorem ipsum dolor.",
+    price: 500,
+    img: "https://images.pexels.com/photos/1557980/pexels-photo-1557980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    sex: "kadin",
+    gr: 250,
+    slug: "lorem-ipsum-slug",
+    ribbon: ["Yeni", "Çok satan"],
+    discount: 0,
+    stock: true,
+    desc: "Lorem ipsum ürünü zort. Yok böyle bir koku uleee. Alın şunu.",
+    tags: ["koku", "parfum", "esans"],
+    marka: "one dior",
+    kullanimZamani: "gece",
+
     comments: [
       {
         userId: 0,
